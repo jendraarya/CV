@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+.header {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.header .intro {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 20px;
+}
+
+/* Left Section */
+.left-section {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Right Section */
+.right-section {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Profile Photo */
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ff7e5f;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Style */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ff7e5f;
+    margin-bottom: 15px;
+}
+
+.card p, .card ul {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Skills */
+.skills ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.skills li {
+    background-color: #ff7e5f;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.skills li:hover {
+    background-color: #feb47b;
+}
+
+.skills li i {
+    margin-right: 10px;
+}
+
+/* Timeline */
+.education .timeline {
+    margin-top: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+}
+
+.timeline-item span {
+    font-size: 0.9rem;
+    color: #ff7e5f;
+}
+
+.timeline-item h3 {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+/* Vision Mission */
+.vision-mission ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.vision-mission ul li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+}
